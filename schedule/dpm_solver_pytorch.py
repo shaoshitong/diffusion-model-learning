@@ -106,6 +106,7 @@ class NoiseScheduleVP:
                 assert alphas_cumprod is not None
                 log_alphas = 0.5 * torch.log(alphas_cumprod)
             self.total_N = len(log_alphas)
+            self.betas = betas
             self.T = 1.
             self.t_array = torch.linspace(0., 1., self.total_N + 1)[1:].reshape((1, -1)).to(dtype=dtype)
             self.log_alpha_array = log_alphas.reshape((1, -1,)).to(dtype=dtype)
@@ -116,7 +117,7 @@ class NoiseScheduleVP:
             self.cosine_s = 0.008
             self.cosine_beta_max = 999.
             self.cosine_t_max = math.atan(self.cosine_beta_max * (1. + self.cosine_s) / math.pi) * 2. * (
-                        1. + self.cosine_s) / math.pi - self.cosine_s
+                    1. + self.cosine_s) / math.pi - self.cosine_s
             self.cosine_log_alpha_0 = math.log(math.cos(self.cosine_s / (1. + self.cosine_s) * math.pi / 2.))
             self.schedule = schedule
             if schedule == 'cosine':
@@ -176,7 +177,7 @@ class NoiseScheduleVP:
         else:
             log_alpha = -0.5 * torch.logaddexp(-2. * lamb, torch.zeros((1,)).to(lamb))
             t_fn = lambda log_alpha_t: torch.arccos(torch.exp(log_alpha_t + self.cosine_log_alpha_0)) * 2. * (
-                        1. + self.cosine_s) / math.pi - self.cosine_s
+                    1. + self.cosine_s) / math.pi - self.cosine_s
             t = t_fn(log_alpha)
             return t
 
@@ -332,7 +333,13 @@ def model_wrapper(
             cond_grad = cond_grad_fn(x, t_input)
             sigma_t = noise_schedule.marginal_std(t_continuous)
             noise = noise_pred_fn(x, t_continuous)
-            return noise - guidance_scale * sigma_t * cond_grad
+            if cond_grad.ndim == 4:
+                return noise - guidance_scale * sigma_t.view(sigma_t.shape[0], 1, 1, 1) * cond_grad
+            elif cond_grad.ndim == 3:
+                return noise - guidance_scale * sigma_t.view(sigma_t.shape[0], 1, 1) * cond_grad
+            else:
+                raise NotImplementedError
+
         elif guidance_type == "classifier-free":
             if guidance_scale == 1. or unconditional_condition is None:
                 return noise_pred_fn(x, t_continuous, cond=condition)
