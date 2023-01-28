@@ -11,6 +11,7 @@ from schedule import NoiseScheduleVP, model_wrapper, DPM_Solver
 ## For classifier guidance, you need to further define a classifier function,
 ## a guidance scale and a condition variable.
 
+
 # model = ....
 # model_kwargs = {...}
 # x_T = ...
@@ -42,7 +43,6 @@ model_path = "256x256_diffusion.pt"
 _model_fn.load_state_dict(torch.load(model_path, map_location="cpu"))
 _model_fn.cuda()
 
-# (dpm solver++) + (adm)
 @torch.no_grad()
 def model(x, t, **kwargs):
     B, C = x.shape[:2]
@@ -56,8 +56,8 @@ model_kwargs = {"y": label}
 
 # TODO: III. define condition
 import torch.nn.functional as F
-
-condition = lambda x, y=label: F.log_softmax(x, dim=-1)[range(x.shape[0]), y.view(-1)]
+tau = 1.0
+condition = lambda x, y=label: F.log_softmax(x/tau, dim=-1)[range(x.shape[0]), y.view(-1)]
 
 # TODO: IV. define unconditional_condition
 unconditional_condition = None  # Nothing to do with guidance-classifier scenarios
@@ -65,7 +65,7 @@ unconditional_condition = None  # Nothing to do with guidance-classifier scenari
 # TODO: V. define guidance_scale
 from utils import classifier_defaults
 
-guidance_scale = 4.0  # default
+guidance_scale = 1.0  # default
 
 # TODO: VI. define classifier
 classifier_hyperparameter = classifier_defaults()
@@ -145,7 +145,6 @@ if not os.path.exists("x_T.pt"):
     torch.save(x_T,"x_T.pt")
 else:
     x_T  = torch.load("x_T.pt")
-x_T = torch.randn(image_shape).cuda()
 x_sample = dpm_solver.sample(
     x_T,
     steps=20,
@@ -177,4 +176,4 @@ for i in range(x_sample.shape[0]):
     sub_image = x_sample[i]
     sub_image = (sub_image / 2 + 0.5).clamp(0, 1)
     sub_image = sub_image.cpu().permute(1, 2, 0).numpy()
-    numpy_to_pil(sub_image)[0].save(f"sample_scale_is_{guidance_scale}_{i}.png")
+    numpy_to_pil(sub_image)[0].save(f"sample_tau_is_{tau}_{i}.png")

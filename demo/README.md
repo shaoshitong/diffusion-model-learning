@@ -22,9 +22,9 @@ pip install --upgrade "jax[cpu]"
 demo explanation:
 |  demo   | explanation  |
 |  ----  | ----  |
-| classifier_guidance_dpm_solver_demo.py  | Call dpm solver for generation by importing the unet used by `ddim` and `scheduler` in `diffusers`. |
-| uncond_dpm_solver_demo.py  | Call dpm solver for generation by importing the unet used by `ddim` and `scheduler` in `guided-diffusion`[link](https://github.com/openai/guided-diffusion). This is a classifier-guidance scenario. |
-
+| uncond_dpm_solver_demo.py  | Call dpm solver for generation by importing the unet used by `ddim` and `scheduler` in `diffusers`.  |
+| classifier_guidance_dpm_solver_demo.py  | Call dpm solver for generation by importing the unet used by `ddim` and `scheduler` in `guided-diffusion`[link](https://github.com/openai/guided-diffusion). This is a classifier-guidance scenario.|
+| classifier_guidance_dpm_solver_demo_2.py | Solve constant \mathcal{Z} is not a constant. Detail can be found in yuque [link](https://www.yuque.com/u29155493/ru454g/imahsg0kzzt5xo5a#Ug61t). | 
 #### dpm solver in uncond scenario
 
 1. load unet in code line 28-34.
@@ -40,5 +40,15 @@ demo explanation:
 2. load classifier in code line 70-80.
 3. load betas and noise scheduler in code line 85-98.
 4. translate unet from diffusers to dpm solver format in code line 102-112.
-5. initialize x_t in code line 132-133.
-6. generate x_0 in code line 134-165.
+5. initialize x_t in code line 132-148.
+6. generate x_0 in code line 149-165.
+
+#### dpm solver in classifier-guidance scenario (constant \mathcal{Z})
+
+1. load unet in code line 30-53.
+2. define \tau in code line 59.
+3. load classifier in code line 70-80.
+4. load betas and noise scheduler in code line 85-98.
+5. translate unet from diffusers to dpm solver format in code line 102-112.
+6. initialize x_t in code line 132-147.
+7. generate x_0 in code line 148-165.
