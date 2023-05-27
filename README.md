@@ -6,7 +6,7 @@ In the docs folder, I have my notes on diffusion model, including papers and goo
 
 ---
 
-### Papers are list here:
+### Papers are list in [paper/README.md](./papers/README.md):
 
 #### Diffusion Survey:
 
