@@ -173,6 +173,11 @@
 
 #### NeRF:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
+| ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
+
 #### GNN:
 
 #### Reid:
@@ -180,6 +185,11 @@
 #### Long-tail Distribution:
 
 #### 2D/3D Vision-Language:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
+| ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
 
 #### Self-supervised Learning:
 
