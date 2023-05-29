@@ -176,6 +176,10 @@
 |  Title   | First Author | Conference/Journal | Link | Code |
 |  ----  | ----  | ---- | ---- | ---- |
 | DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
+| Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation | Haochen Wang | CVPR | [paper](https://arxiv.org/abs/2212.00774) | [code](https://github.com/pals-ttic/sjc/) |
+| Magic3D: High-Resolution Text-to-3D Content Creation | Chen-Hsuan Lin | CVPR | [paper](https://arxiv.org/abs/2211.10440) | [code](https://github.com/chinhsuanwu/dreamfusionacc) |
+| Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation | Rui Chen | Arxiv | [paper](https://arxiv.org/abs/2303.13873) | [code](https://github.com/Gorilla-Lab-SCUT/Fantasia3D) |
+| Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures | Gal Metzer | CVPR | [paper](https://arxiv.org/abs/2211.07600) | [code](https://github.com/eladrich/latent-nerf) | 
 | ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
 
 #### GNN:
@@ -189,6 +193,10 @@
 |  Title   | First Author | Conference/Journal | Link | Code |
 |  ----  | ----  | ---- | ---- | ---- |
 | DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
+| Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation | Haochen Wang | CVPR | [paper](https://arxiv.org/abs/2212.00774) | [code](https://github.com/pals-ttic/sjc/) |
+| Magic3D: High-Resolution Text-to-3D Content Creation | Chen-Hsuan Lin | CVPR | [paper](https://arxiv.org/abs/2211.10440) | [code](https://github.com/chinhsuanwu/dreamfusionacc) |
+| Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation | Rui Chen | Arxiv | [paper](https://arxiv.org/abs/2303.13873) | [code](https://github.com/Gorilla-Lab-SCUT/Fantasia3D) |
+| Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures | Gal Metzer | CVPR | [paper](https://arxiv.org/abs/2211.07600) | [code](https://github.com/eladrich/latent-nerf) | 
 | ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
 
 #### Self-supervised Learning:
