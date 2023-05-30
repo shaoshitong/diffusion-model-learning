@@ -45,6 +45,7 @@
     - [Image Quality Assessment](#image-quality-assessment)
     - [Music](#music)
     - [Speech](#speech)
+    - [GflowNet](#gflownet)
 - [Diffusion Model Compression/Accelerated Sampling](#diffusion-model-compressionaccelerated-sampling)
     - [Accelerated Sampling](#accelerated-sampling)
     - [Model Compression](#model-compression)
@@ -163,6 +164,10 @@
 
 ### Diffusion Model Application:
 
+** Note: In this title, we just summarize works that use diffusion models for their specific domains, rather than using their specific domains for diffusion models. Thus, no works can be listed in parameter pruning, model quantization.**
+
+** Note: For a field, if there is no relevant work listed in it, most likely because I haven't put it up yet.**
+
 #### Crucial:
 
 |  Title   | First Author | Conference/Journal | Link | Code |
@@ -171,7 +176,7 @@
 | Classifier-Free Diffusion Guidance | Jonathan Ho | NIPS workshop | [paper](https://arxiv.org/abs/2207.12598) | [code](https://github.com/Michedev/DDPMs-Pytorch) |
 | DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
 
-#### NeRF:
+#### NeRF:C Bodnar 
 
 |  Title   | First Author | Conference/Journal | Link | Code |
 |  ----  | ----  | ---- | ---- | ---- |
@@ -184,9 +189,25 @@
 
 #### GNN:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Grand: Graph neural diffusion | B Chamberlain | NIPS workshop/ICML | [paper](http://proceedings.mlr.press/v139/chamberlain21a.html) | [code](https://github.com/twitter-research/graph-neural-pde) |
+| Neural sheaf diffusion: A topological perspective on heterophily and oversmoothing in gnns | C Bodnar | NIPS | [paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/75c45fca2aa416ada062b26cc4fb7641-Abstract-Conference.html) | - |
+| Graph Neural Networks as Gradient Flows: understanding graph convolutions via energy |Francesco Di Giovanni | Arxiv | [paper](https://arxiv.org/abs/2206.10991) | - |
+
 #### Reid:
+ 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Person image synthesis via denoising diffusion model | AK Bhunia | CVPR | [paper](Bhunia_Person_Image_Synthesis_via_Denoising_Diffusion_Model_CVPR_2023_paper) | [code](https://github.com/ankanbhunia/PIDM) |
+
 
 #### Long-tail Distribution:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| DiffBFR: Bootstrapping Diffusion Model Towards Blind Face Restoration | Xinmin Qiu | Arxiv | [paper](https://arxiv.org/abs/2305.04517) | - |
+| Class-Balancing Diffusion Models | Yiming Qin | CVPR | [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Qin_Class-Balancing_Diffusion_Models_CVPR_2023_paper.html) | - |
 
 #### 2D/3D Vision-Language:
 
@@ -201,13 +222,42 @@
 
 #### Self-supervised Learning:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Self-Score: Self-Supervised Learning on Score-Based Models for MRI Reconstruction | Zhuo-Xu Cui | Arxiv | [paper](https://arxiv.org/abs/2209.00835) | - |
+| Diffusion adversarial representation learning for self-supervised vessel segmentation | Boah Kim | ICLR | [paper](https://arxiv.org/abs/2209.14566) | - |
+| DDM: Self-Supervised Diffusion MRI Denoising with Generative Diffusion Models | Tiange Xiang | ICLR | [paper](https://arxiv.org/abs/2302.03018) | [code](https://github.com/stanfordmimi/ddm2) |
+| Learning 3D Photography Videos via Self-supervised Diffusion on Single Images | Xiaodong Wang | Arxiv | [paper](https://arxiv.org/abs/2302.10781) | - |
+| DDS2M: Self-Supervised Denoising Diffusion Spatio-Spectral Model for Hyperspectral Image Restoration | Yuchun Miao | Arxiv | [paper](https://arxiv.org/abs/2303.06682) | - |
+| Data-Centric Learning from Unlabeled Graphs with Diffusion Model | Gang Liu | Arxiv | [paper](https://arxiv.org/abs/2303.10108) | [code](https://github.com/liugangcode/data_centric_transfer) |
+| Denoising Diffusion Autoencoders are Unified Self-supervised Learners | Weilai Xiang | Arxiv | [paper](https://arxiv.org/abs/2303.09769) | - |
+
 #### Data Augmentation/Expansion:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Effective Data Augmentation With Diffusion Models | Brandon Trabucco | Arxiv | [paper](https://arxiv.org/abs/2302.07944) | [code](https://github.com/brandontrabucco/da-fusion) |
+| Deep Data Augmentation for Weed Recognition Enhancement: A Diffusion Probabilistic Model and Transfer Learning Based Approach | Dong Chen | Arxiv | [paper](https://arxiv.org/abs/2210.09509) | [code](https://github.com/dongchen06/dmweeds) |
+| Diffusion-based Data Augmentation for Skin Disease Classification: Impact Across Original Medical Datasets to Fully Synthetic Images | Mohamed Akrout | Arxiv | [paper](https://arxiv.org/abs/2301.04802) | - |
+| A data augmentation perspective on diffusion models and retrieval | Max F. Burg | Arxiv | [paper](https://arxiv.org/abs/2304.10253) | - |
+| Multimodal Data Augmentation for Image Captioning using Diffusion Models | Changrong Xiao | Arxiv | [paper](https://arxiv.org/abs/2305.01855) | [code](https://github.com/xiaochr/multimodal-augmentation-image-captioning) |
+| DiffuseExpand: Expanding dataset for 2D medical image segmentation using diffusion models | Shitong Shao | Arxiv | [paper](https://arxiv.org/abs/2304.13416) | [code](https://github.com/shaoshitong/DiffuseExpand) |
+| AugDiff: Diffusion based Feature Augmentation for Multiple Instance Learning in Whole Slide Image | Zhuchen Shao | Arxiv | [paper](https://arxiv.org/abs/2303.06371) | - | 
+
 #### Object Detection:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Diffusiondet: Diffusion model for object detection | Shoufa Chen | Arxiv | [paper](https://arxiv.org/abs/2211.09788) | [code](https://github.com/ShoufaChen/DiffusionDet) |
 
 #### Visual Tracking:
 
 #### Semantic Segmentation:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Segdiff: Image segmentation with diffusion probabilistic models | Tomer Amit | Arxiv | [paper](https://arxiv.org/abs/2112.00390) | [code](https://github.com/tomeramit/SegDiff) |
+| Ambiguous Medical Image Segmentation Using Diffusion Models | Aimon Rahman | CVPR | [paper](https://arxiv.org/abs/2304.04745) | [code](https://github.com/aimansnigdha/ambiguous-medical-image-segmentation-using-diffusion-models) |
 
 #### Instance Segmentation:
 
@@ -233,9 +283,19 @@
 
 #### Knowledge Distillation:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Knowledge Diffusion for Distillation | Tao Huang | Arxiv | [paper](https://arxiv.org/abs/2305.15712) | [code](https://github.com/hunto/diffkd) |
+
 #### Parameter Pruning:
 
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+
 #### Model Quantization:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
 
 #### Depth Estimation:
 
@@ -243,7 +303,7 @@
 
 #### Anomaly Detection:
 
-#### 3D Reconstruction:
+#### 3D Reconstruction:https://arxiv.org/abs/2303.08385
 
 #### Trajectory Prediction:
 
@@ -272,8 +332,40 @@
 |  Title   | First Author | Conference/Journal | Link | Code |
 |  ----  | ----  | ---- | ---- | ---- |
 | Symbolic Music Generation with Diffusion Models | Gautam Mittal | ISMIR | [paper](https://arxiv.org/abs/2103.16091) | [code](https://github.com/magenta/symbolic-music-diffusion) |
+| Generating symbolic music using diffusion models | Lilac Atassi | Arxiv | [paper](https://arxiv.org/abs/2303.08385) | [code](https://github.com/lilac-code/music-diffusion) |
+| Solving Audio Inverse Problems with a Diffusion Model | Eloi Moliner | ICASSP | [paper](https://ieeexplore.ieee.org/abstract/document/10095637) | - |
+| DiffuseRoll: Multi-track multi-category music generation based on diffusion model | Hongfei Wang | Arxiv | [paper](https://arxiv.org/abs/2303.07794) | - |
+| MAID: A Conditional Diffusion Model for Long Music Audio Inpainting | Kaiyang Liu | ICASSP | [paper](https://ieeexplore.ieee.org/abstract/document/10095769) | - |
+| EDGE: Editable Dance Generation From Music | Jonathan Tseng | CVPR | [paper](https://arxiv.org/abs/2211.10658) | [code](https://github.com/Stanford-TML/EDGE) |
 
 #### Speech:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Prodiff: Progressive fast diffusion model for high-quality text-to-speech | Rongjie Huang | ACMMM | [paper](https://dl.acm.org/doi/abs/10.1145/3503161.3547855) | [code](https://github.com/Rongjiehuang/ProDiff) |
+| Diff-TTS: A Denoising Diffusion Model for Text-to-Speech | Myeonghun Jeong | Arxiv | [paper](https://arxiv.org/abs/2104.01409) | [code](https://github.com/keonlee9420/DiffSinger) | 
+| Fastdiff: A fast conditional diffusion model for high-quality speech synthesis | Rongjie Huang | IJCAI | [paper](https://arxiv.org/abs/2204.09934) | [code](https://github.com/Rongjiehuang/FastDiff) |
+| Guided-tts: A diffusion model for text-to-speech via classifier guidance | Heeseung Kim | ICML | [paper](https://arxiv.org/abs/2111.11755) | - |
+| Restoring degraded speech via a modified diffusion model | Jianwei Zhang | Arxiv | [paper](https://arxiv.org/abs/2104.11347) | - |
+| DiffMotion: Speech-Driven Gesture Synthesis Using Denoising Diffusion Model | Fan Zhang | MMM | [paper](https://link.springer.com/chapter/10.1007/978-3-031-27077-2_18) | [code](https://github.com/zf-CUZ/DiffMotion) |
+
+#### GflowNet:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Generative Flow Networks for Discrete Probabilistic Modeling | Dinghuai Zhang | NIPS | [paper](https://arxiv.org/abs/2202.01361) | [code](https://github.com/GFNOrg/EB_GFN) |
+| ROBUST SCHEDULING WITH GFLOWNETS | David W. Zhang | ICLR | [paper](https://arxiv.org/abs/2302.05446) | [code](https://github.com/saleml/torchgfn) |
+| Flow Network based Generative Models for Non-Iterative Diverse Candidate Generation | Emmanuel Bengio | NIPS | [paper](https://arxiv.org/abs/2106.04399) | [code](https://github.com/GFNOrg/gflownet) | 
+| Biological Sequence Design with GFlowNets | Moksh Jain | ICML | [paper](https://proceedings.mlr.press/v162/jain22a.html) | [code](https://github.com/MJ10/BioSeq-GFN-AL) |
+| Bayesian Structure Learning with Generative Flow Networks | Tristan Deleu | NIPS | [paper](https://arxiv.org/abs/2202.13903) | [code](https://github.com/tristandeleu/jax-dag-gflownet) | 
+| Trajectory balance: Improved credit assignment in GFlowNets | Nikolay Malkin | NIPS | [paper](https://arxiv.org/abs/2201.13259) | [code](https://gist.github.com/malkin1729/9a87ce4f19acdc2c24225782a8b81c15) |
+| A theory of continuous generative flow networks | Salem Lahlou | ICML | [paper](https://arxiv.org/abs/2301.12594) | [code](https://github.com/saleml/continuous-gfn) |
+| Better Training of GFlowNets with Local Credit and Incomplete Trajectories | Ling Pan | Arxiv | [paper](https://arxiv.org/abs/2302.01687) | - |
+| Unifying Generative Models with GFlowNets and Beyond | Dinghuai Zhang | ICML workshop | [paper](https://arxiv.org/abs/2209.02606) | - |
+| A Max-Flow Based Approach for Neural Architecture Search | Chao Xue | ECCV | [paper](https://link.springer.com/chapter/10.1007/978-3-031-20044-1_39) | - |
+| Multi-Objective GFlowNets | Moksh Jain | Arxiv | [paper](https://arxiv.org/abs/2210.12765) | - |
+| Towards Understanding and Improving GFlowNet Training | Max W. Shen | ICML | [paper](https://arxiv.org/abs/2305.07170) | [code](https://github.com/maxwshen/gflownet) |
+| torchgfn: A PyTorch GFlowNet library | Salem Lahlou | Arxiv | [paper](https://arxiv.org/abs/2305.14594) | [code](https://github.com/saleml/torchgfn) |
 
 ### Diffusion Model Compression/Accelerated Sampling:
 
