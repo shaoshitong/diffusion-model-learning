@@ -304,7 +304,7 @@
 
 #### Anomaly Detection:
 
-#### 3D Reconstruction:https://arxiv.org/abs/2303.08385
+#### 3D Reconstruction:
 
 #### Trajectory Prediction:
 
