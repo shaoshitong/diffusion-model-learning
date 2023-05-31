@@ -154,7 +154,8 @@
 | Maximum Likelihood Training of Parametrized Diffusion Model | Dongjun Kim | ICLR reject | [paper](https://openreview.net/forum?id=1v1N7Zhmgcx) | - |
 | Soft truncation: A universal training technique of score-based diffusion model for high precision score estimation | Dongjun Kim | ICML | [paper](https://proceedings.mlr.press/v162/kim22i.html) | [code](https://github.com/Kim-Dongjun/Soft-Truncation) |
 | Robust Classification via a Single Diffusion Model | Huanran Chen | Arxiv | [paper](https://arxiv.org/abs/2305.15241) | - |
-
+| Maximum Likelihood Training for Score-Based Diffusion ODEs by High-Order Denoising Score Matching | Cheng Lu | ICML | [paper](https://arxiv.org/abs/2206.08265) | [code](https://github.com/luchengthu/mle_score_ode) |
+| Improved Techniques for Maximum Likelihood Estimation for Diffusion ODEs | Kaiwen Zheng | ICML | [paper](https://arxiv.org/abs/2305.03935) | - |
 
 #### Architecture
 
