@@ -16,6 +16,7 @@
     - [Semantic Segmentation](#semantic-segmentation)
     - [Instance Segmentation](#instance-segmentation)
     - [Panoptic Segmentation](#panoptic-segmentation)
+    - [Image Resolution](#)
     - [Medical](#medical)
     - [Image Editing](#image-editing)
     - [Low-level Vision](#low-level-vision)
@@ -46,6 +47,8 @@
     - [Music](#music)
     - [Speech](#speech)
     - [GflowNet](#gflownet)
+    - [Generative Steganography](#generative-steganography)
+    - [Quality Diversity Reinforcement Learning](#quality-diversity-reinforcement-learning)
 - [Diffusion Model Compression/Accelerated Sampling](#diffusion-model-compressionaccelerated-sampling)
     - [Accelerated Sampling](#accelerated-sampling)
     - [Model Compression](#model-compression)
@@ -156,6 +159,8 @@
 | Robust Classification via a Single Diffusion Model | Huanran Chen | Arxiv | [paper](https://arxiv.org/abs/2305.15241) | - |
 | Maximum Likelihood Training for Score-Based Diffusion ODEs by High-Order Denoising Score Matching | Cheng Lu | ICML | [paper](https://arxiv.org/abs/2206.08265) | [code](https://github.com/luchengthu/mle_score_ode) |
 | Improved Techniques for Maximum Likelihood Estimation for Diffusion ODEs | Kaiwen Zheng | ICML | [paper](https://arxiv.org/abs/2305.03935) | - |
+| Direct Diffusion Bridge using Data Consistency for Inverse Problems | Hyungjin Chung | Arxiv | [paper](https://arxiv.org/abs/2305.19809) | - |
+
 
 #### Architecture
 
@@ -177,7 +182,7 @@
 | Classifier-Free Diffusion Guidance | Jonathan Ho | NIPS workshop | [paper](https://arxiv.org/abs/2207.12598) | [code](https://github.com/Michedev/DDPMs-Pytorch) |
 | DreamFusion: Text-to-3D using 2D Diffusion | Ben Poole | ICLR | [paper](https://arxiv.org/abs/2209.14988) | [code](https://github.com/ashawkey/stable-dreamfusion) |
 
-#### NeRF:C Bodnar 
+#### NeRF:
 
 |  Title   | First Author | Conference/Journal | Link | Code |
 |  ----  | ----  | ---- | ---- | ---- |
@@ -187,6 +192,8 @@
 | Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation | Rui Chen | Arxiv | [paper](https://arxiv.org/abs/2303.13873) | [code](https://github.com/Gorilla-Lab-SCUT/Fantasia3D) |
 | Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures | Gal Metzer | CVPR | [paper](https://arxiv.org/abs/2211.07600) | [code](https://github.com/eladrich/latent-nerf) | 
 | ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
+| ZeroAvatar: Zero-shot 3D Avatar Generation from a Single Image | Zhenzhen Weng | Arxiv | [paper](https://arxiv.org/abs/2305.16411) | - |
+
 
 #### GNN:
 
@@ -220,6 +227,7 @@
 | Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation | Rui Chen | Arxiv | [paper](https://arxiv.org/abs/2303.13873) | [code](https://github.com/Gorilla-Lab-SCUT/Fantasia3D) |
 | Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures | Gal Metzer | CVPR | [paper](https://arxiv.org/abs/2211.07600) | [code](https://github.com/eladrich/latent-nerf) | 
 | ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation | Zhengyi Wang | Arxiv | [paper](https://arxiv.org/abs/2305.16213) | [code](https://github.com/thu-ml/prolificdreamer) |
+| SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds | Yanyu Li | Arxiv | [paper](https://arxiv.org/abs/2306.00980) | - |
 
 #### Self-supervised Learning:
 
@@ -264,9 +272,19 @@
 
 #### Panoptic Segmentation:
 
+#### Image Resolution:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Dissecting Arbitrary-scale Super-resolution Capability from Pre-trained Diffusion Generative Models | Ruibin Li | Arxiv | [paper](https://arxiv.org/abs/2306.00714) | - |
+
 #### Medical:
 
 #### Image Editing:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| AvatarStudio: Text-driven Editing of 3D Dynamic Human Head Avatars | MOHIT MENDIRATTA | Arxiv | [paper](https://arxiv.org/abs/2306.00547) | - |
 
 #### Low-level Vision:
 
@@ -368,6 +386,18 @@
 | Towards Understanding and Improving GFlowNet Training | Max W. Shen | ICML | [paper](https://arxiv.org/abs/2305.07170) | [code](https://github.com/maxwshen/gflownet) |
 | torchgfn: A PyTorch GFlowNet library | Salem Lahlou | Arxiv | [paper](https://arxiv.org/abs/2305.14594) | [code](https://github.com/saleml/torchgfn) |
 
+#### Generative Steganography:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Diffusion-Stego: Training-free Diffusion Generative Steganography via Message Projection | Daegyu Kim | Arxiv | [paper](https://arxiv.org/abs/2305.18726) | - |
+
+#### Quality Diversity Reinforcement Learning:
+
+|  Title   | First Author | Conference/Journal | Link | Code |
+|  ----  | ----  | ---- | ---- | ---- |
+| Generating Behaviorally Diverse Policies with Latent Diffusion Models| Shashank Hegde | Arxiv | [paper](https://arxiv.org/abs/2305.18738) | - |
+
 ### Diffusion Model Compression/Accelerated Sampling:
 
 #### Accelerated Sampling
@@ -397,7 +427,7 @@
 | Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality | Daniel Watson | ICLR | [paper](https://arxiv.org/abs/2202.05830) | - |
 | Learning to Efficiently Sample from Diffusion Probabilistic Models | Daniel Watson | Arxiv | [paper](https://arxiv.org/abs/2106.03802) | - |
 | On Distillation of Guided Diffusion Models | Chenlin Meng | CVPR | [paper](https://arxiv.org/abs/2210.03142) | - |
-
+| Diff-Instruct: A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models | Weijian Luo | Arxiv | [paper](https://arxiv.org/abs/2305.18455) | - |
 
 #### Model Compression
 
@@ -411,3 +441,4 @@
 | Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations | Yu-Hui Chen | Arxiv | [paper](https://arxiv.org/abs/2304.11267) | - |
 | Token Merging for Fast Stable Diffusion | Daniel Bolya | Arxiv | [paper](https://arxiv.org/abs/2303.17604) | [code](https://github.com/dbolya/tomesd) |
 | Diffumask: Synthesizing images with pixel-level annotations for semantic segmentation using diffusion models | Weijia Wu | Arxiv | [code](https://arxiv.org/abs/2303.11681) | - | 
+| On Architectural Compression of Text-to-Image Diffusion Models | Bo-Kyeong Kim | Arxiv | [paper](https://arxiv.org/abs/2305.15798) | - | 
