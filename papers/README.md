@@ -441,4 +441,5 @@
 | Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations | Yu-Hui Chen | Arxiv | [paper](https://arxiv.org/abs/2304.11267) | - |
 | Token Merging for Fast Stable Diffusion | Daniel Bolya | Arxiv | [paper](https://arxiv.org/abs/2303.17604) | [code](https://github.com/dbolya/tomesd) |
 | Diffumask: Synthesizing images with pixel-level annotations for semantic segmentation using diffusion models | Weijia Wu | Arxiv | [code](https://arxiv.org/abs/2303.11681) | - | 
-| On Architectural Compression of Text-to-Image Diffusion Models | Bo-Kyeong Kim | Arxiv | [paper](https://arxiv.org/abs/2305.15798) | - | 
+| On Architectural Compression of Text-to-Image Diffusion Models | Bo-Kyeong Kim | Arxiv | [paper](https://arxiv.org/abs/2305.15798) | - |
+| Distilling the Knowledge in Diffusion Models | Tim Dockhorn | CVPR workshop | [paper](https://generative-vision.github.io/workshop-CVPR-23/data/46.pdf) | - |
